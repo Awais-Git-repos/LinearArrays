@@ -1,0 +1,23 @@
+import numpy as np
+N = int(input("Enter the length of an Array"))
+print(" ")
+Array = np.array([0 for i in range(20)])
+for i in range(N):
+    Array[i] = int(input("Enter the values of an Array"))
+def printArray(Array,N):
+    for i in range(N+1):
+        print(Array[i])
+        
+def UpdateArray(Array, N, K, Item):
+    j = N - 1
+    while(j >= k):
+        Array[j+1] = Array[j]
+        j = j -1
+    Array[k] = Item
+    N = N + 1
+    return N
+    
+k = int(input("Enter the position you want to add Element "))
+Item = int(input("Add the Element"))
+UpdateArray(Array, N, k, Item)
+printArray(Array,N)
