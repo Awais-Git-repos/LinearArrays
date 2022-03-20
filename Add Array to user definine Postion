@@ -1,0 +1,23 @@
+
+var a = []
+a[0] = 20;
+a[1] = 30
+a[2] = 40;
+var c = a.length;
+for(var i = 0; i < a.length; i++){
+    console.log(a[i])
+}
+var IndexNumber = 1;
+var Item = 90;
+for(var i = c; i >= 0; i--){
+    if(i == IndexNumber){
+        a[i] = Item;
+        break;``
+    }
+    else{
+        a[i] = a[i-1];
+    }
+}
+for(var i = 0; i < a.length; i++){
+    console.log(a[i]);
+}
